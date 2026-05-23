@@ -7,6 +7,10 @@ function addStudent() {
     if(name === "" || age === "" || course === "") {
         alert("Please fill all fields");
         return;
+ }
+     if(age <= 0) {
+   alert("Invalid age");
+}
     }
 
     let table = document.getElementById("studentList");
