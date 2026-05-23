@@ -10,6 +10,7 @@ function addStudent() {
  }
      if(age <= 0) {
    alert("Invalid age");
+         return;
 }
     }
 
