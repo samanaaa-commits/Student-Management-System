@@ -29,8 +29,8 @@ h1 {
 
 .form input {
     flex: 1;
-    padding: 10px;
-    border: 2px solid #ccc;
+    padding: 5px;
+    border: 1px solid #ccc;
     border-radius: 8px;
     outline: none;
     transition: 0.3s;
