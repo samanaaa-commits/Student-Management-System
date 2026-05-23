@@ -11,8 +11,7 @@ function addStudent() {
      if(age <= 0) {
    alert("Invalid age");
          return;
-}
-    }
+     }
 
     let table = document.getElementById("studentList");
 
