@@ -30,10 +30,13 @@ h1 {
 .form input {
     flex: 1;
     padding: 5px;
+    width: 160px;
     border: 1px solid #ccc;
     border-radius: 8px;
     outline: none;
     transition: 0.3s;
+    flex-wrap:wrap;
+    justify-conent:centre;
 }
 
 .form input:focus {
