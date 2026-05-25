@@ -26,10 +26,10 @@ function addStudent() {
 
     actionCell.innerHTML = 
     `<button class="delete-btn" onclick="deleteStudent(this)">Delete</button>`;
-    document.getElementById("ID").value = "";
-    document.getElementById("name").value = "";
-    document.getElementById("age").value = "";
-    document.getElementById("course").value = "";
+    document.getElementById("ID").value ="";
+    document.getElementById("name").value ="";
+    document.getElementById("age").value ="";
+    document.getElementById("course").value ="";
 }
 
 function deleteStudent(button) {
