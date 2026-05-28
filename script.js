@@ -33,8 +33,8 @@ function addStudent() {
 
     displayStudents();
 
-    document.getElementById("ID").value = "";
-    document.getElementById("name").value = "";
+    document.getElementById("ID").value ="";
+    document.getElementById("name").value ="";
     document.getElementById("age").value = "";
     document.getElementById("course").value = "";
 }
