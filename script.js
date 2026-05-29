@@ -11,12 +11,12 @@ function addStudent() {
     let course = document.getElementById("course").value;
 
     if (ID === "" || name === "" || age === "" || course === "") {
-        alert("Please fill all fields");
+        alert("Please fill all the fields");
         return;
     }
 
     if (age <= 0) {
-        alert("Invalid age");
+        alert("Invalid age!!");
         return;
     }
 
