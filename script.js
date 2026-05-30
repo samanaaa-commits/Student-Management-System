@@ -1,4 +1,4 @@
-let students = JSON.parse(localStorage.getItem("students")) || [];
+let students = JSON.parse(localStorage.getItem("students")) || [];//getting data back from local storage 
 
 window.onload = function () {
     displayStudents();
