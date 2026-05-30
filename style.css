@@ -86,9 +86,9 @@ table th {
 }
 
 .delete-btn {
-    background: darkred;
+    background: #a30000;
 }
 
 .delete-btn:hover {
-    background: darkred;
+    background: #a30000;
 }
