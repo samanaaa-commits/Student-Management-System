@@ -53,8 +53,9 @@ function displayStudents() {
 
         let actionCell = row.insertCell(4);
 
-        actionCell.innerHTML =
-            `<button onclick="deleteStudent('${student.ID}')">Delete</button>`;
+     actionCell.innerHTML =
+    `<button class="delete-btn" onclick="deleteStudent('${student.ID}')"> Delete
+    </button>`;
     });
 }
 
