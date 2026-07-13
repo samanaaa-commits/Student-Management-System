@@ -9,7 +9,8 @@ function addStudent() {
     let name = document.getElementById("name").value;
     let age = document.getElementById("age").value;
     let course = document.getElementById("course").value;
-
+    
+//validation
     if (ID === "" || name === "" || age === "" || course === "") {
         alert("Please fill all the fields");
         return;
@@ -19,26 +20,28 @@ function addStudent() {
         alert("Invalid age!!");
         return;
     }
-
+//creating expense object
     let student = {
         ID: ID,
         name: name,
         age: age,
         course: course
     };
-
+//adding to array
     students.push(student);
 
     localStorage.setItem("students", JSON.stringify(students));
-
+    
     displayStudents();
-
+    
+//clearing the inputs
     document.getElementById("ID").value ="";
     document.getElementById("name").value ="";
     document.getElementById("age").value = "";
     document.getElementById("course").value = "";
 }
 
+//displaying the students
 function displayStudents() {
     let table = document.getElementById("studentList");
     table.innerHTML = "";
@@ -58,6 +61,7 @@ function displayStudents() {
     });
 }
 
+//deleting
 function deleteStudent(id) {
     students = students.filter(student => student.ID !== id);
 
