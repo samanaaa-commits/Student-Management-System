@@ -43,24 +43,30 @@ function addStudent() {
 
 //displaying the students
 function displayStudents() {
+
     let table = document.getElementById("studentList");
+
     table.innerHTML = "";
 
-    students.forEach((student) => {
-        let row = table.insertRow();
+    for (let i = 0; i < students.length; i++) {
 
-        row.insertCell(0).innerHTML = student.ID;
-        row.insertCell(1).innerHTML = student.name;
-        row.insertCell(2).innerHTML = student.age;
-        row.insertCell(3).innerHTML = student.course;
+        let row = `
+        <tr>
+            <td>${students[i].ID}</td>
+            <td>${students[i].name}</td>
+            <td>${students[i].age}</td>
+            <td>${students[i].course}</td>
+            <td>
+                <button class="delete-btn" onclick="deleteStudent('${students[i].ID}')">
+                    Delete
+                </button>
+            </td>
+        </tr>
+        `;
 
-        let actionCell = row.insertCell(4);
-
-     actionCell.innerHTML =
-    `<button class="delete-btn" onclick="deleteStudent('${student.ID}')"> Delete</button>`;
-    });
+        table.innerHTML += row;
+    }
 }
-
 //deleting
 function deleteStudent(id) {
     students = students.filter(student => student.ID !== id);
